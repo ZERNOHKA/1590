@@ -53,7 +53,7 @@ test('step3', async ({ page }) => {
   await input.fill('1+1');
   await sumbit.click();
   border = await input.evaluate((el) => window.getComputedStyle(el).border);
-  await expect(border).toBe('1px solid rgb(214, 214, 231)');
+  await expect(border).toBe('3px solid rgb(255, 71, 71)');
   error = await page.getByText('не хватает одного или нескольких операндов');
   await expect(error).not.toBeVisible();
 });
