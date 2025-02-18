@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>l1-interactive-elements-v1</title>
+  
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/default.css">
+  
+  <!-- Подключение скриптов -->
+  <script defer src="index.js" type="module"></script>
+  <script defer src="utils.js" type="module"></script>
+</head>
+<body>
+  <!-- Разметка внутри body -->
+  <h1>l1-interactive-elements-v1</h1>
+  <form class="input-validation">
+    <label for="equation">Введите выражение с двумя однозначными операндами:</label>
+    <input type="text" id="equation" maxlength="3" name="equation">
+    <button type="submit">Вычислить</button>
+    <p class="error-output"></p>
+    <p class="result"></p>
+  </form>
+</body>
+</html>
